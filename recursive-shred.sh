@@ -14,7 +14,7 @@ if [[ "$directory" == "/" ]]; then
 fi
 
 # Shred the files
-find "$directory" -type f -print | xargs shred -zun 5
+find "$directory" -type f -print0 | xargs -0 shred -zun 5
 
 # Remove the remaining empty directories
 rm -rf "$directory"
