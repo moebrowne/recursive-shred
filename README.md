@@ -11,7 +11,7 @@ The only requirement is that the `shred` command is installed and in your `$PATH
 ## Usage example
 
 ```bash
-./recursive-shred /path/to/directory
+./recursive-shred.sh /path/to/directory
 ```
 
 ## Meta
